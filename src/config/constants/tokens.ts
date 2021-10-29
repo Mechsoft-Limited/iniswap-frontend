@@ -1653,6 +1653,14 @@ export const testnetTokens = {
     'PancakeSwap Token',
     'https://pancakeswap.finance/',
   ),
+  ini: new Token(
+    TESTNET,
+    '0x8c3d557e4c548612529d30763420f3c6e7bcfada',
+    18,
+    'INI',
+    'IniSwap Token',
+    'https://iniswap.finance/',
+  ),
   busd: new Token(
     TESTNET,
     '0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee',
