@@ -59,11 +59,11 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        {account && (
+        {/* {account && (
           <UserBannerWrapper>
             <UserBanner />
           </UserBannerWrapper>
-        )}
+        )} */}
         <Hero />
       </StyledHeroSection>
       <PageSection
@@ -97,14 +97,14 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        <OuterWedgeWrapper>
+        {/*  <OuterWedgeWrapper>
           <InnerWedgeWrapper width="150%" top fill={theme.colors.background}>
             <WedgeTopRight />
           </InnerWedgeWrapper>
-        </OuterWedgeWrapper>
-        <SalesSection {...earnSectionData} />
-        <FarmsPoolsRow />
-      </PageSection>
+        </OuterWedgeWrapper> */}
+        {/*  <SalesSection {...earnSectionData} /> */}
+        {/* <FarmsPoolsRow /> */}
+        {/* </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={
@@ -114,8 +114,8 @@ const Home: React.FC = () => {
         }
         index={2}
         hasCurvedDivider={false}
-      >
-        <WinSection />
+      > */}
+        {/*   <WinSection /> */}
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}

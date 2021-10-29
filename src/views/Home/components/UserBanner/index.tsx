@@ -23,7 +23,7 @@ const UserBanner = () => {
           <UserDetail />
         </Flex>
         <Flex flex="1" width={['100%', null, 'auto']}>
-          <HarvestCard />
+          {/* <HarvestCard /> */}
         </Flex>
       </Flex>
     </StyledCard>

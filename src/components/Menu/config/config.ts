@@ -21,21 +21,21 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     ],
   },
   {
-    label: t('Earn'),
-    href: '/farms',
+    label: t('Earn (soon)'),
+    href: '#',
     icon: 'Earn',
     items: [
       {
-        label: t('Farms'),
-        href: '/farms',
+        label: t('Farms (soon)'),
+        href: '#',
       },
       {
-        label: t('Pools'),
-        href: '/pools',
+        label: t('Pools (soon)'),
+        href: '#',
       },
     ],
   },
-  {
+  /* {
     label: t('Win'),
     href: '/prediction',
     icon: 'Trophy',
@@ -62,7 +62,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
         href: '/collectibles',
       },
     ],
-  },
+  }, */
   {
     label: '',
     href: '/info',
@@ -73,21 +73,21 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
         label: t('Info'),
         href: '/info',
       },
-      {
+      /* {
         label: t('IFO'),
         href: '/ifo',
       },
       {
         label: t('Voting'),
         href: '/voting',
-      },
+      }, */
       {
         type: DropdownMenuItemType.DIVIDER,
       },
-      {
+      /*  {
         label: t('Leaderboard'),
         href: '/teams',
-      },
+      }, */
       {
         type: DropdownMenuItemType.DIVIDER,
       },
@@ -98,7 +98,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
       },
       {
         label: t('Docs'),
-        href: 'https://docs.pancakeswap.finance',
+        href: 'https://docs.iniswap.finance',
         type: DropdownMenuItemType.EXTERNAL_LINK,
       },
     ],
