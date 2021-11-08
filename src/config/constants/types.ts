@@ -1,5 +1,5 @@
 import BigNumber from 'bignumber.js'
-import { Token } from 'iniswap-sdk'
+import { Token } from '@iniswap/sdk'
 
 export type TranslatableText =
   | string

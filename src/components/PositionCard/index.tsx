@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { JSBI, Pair, Percent } from 'iniswap-sdk'
+import { JSBI, Pair, Percent } from '@iniswap/sdk'
 import { Button, Text, ChevronUpIcon, ChevronDownIcon, Card, CardBody, Flex, CardProps, AddIcon } from '@iniswap/uikit'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'

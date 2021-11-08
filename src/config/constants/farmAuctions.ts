@@ -1,4 +1,4 @@
-import { Token, Pair, ChainId } from 'iniswap-sdk'
+import { Token, Pair, ChainId } from '@iniswap/sdk'
 import tokens from './tokens'
 import { FarmAuctionBidderConfig } from './types'
 

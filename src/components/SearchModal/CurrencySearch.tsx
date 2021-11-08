@@ -1,5 +1,5 @@
 import React, { KeyboardEvent, RefObject, useCallback, useMemo, useRef, useState, useEffect } from 'react'
-import { Currency, ETHER, Token } from 'iniswap-sdk'
+import { Currency, ETHER, Token } from '@iniswap/sdk'
 import { Text, Input, Box } from '@iniswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { FixedSizeList } from 'react-window'

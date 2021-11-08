@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { useFarmUser } from 'state/farms/hooks'
 import { useTranslation } from 'contexts/Localization'
 import { Text } from '@iniswap/uikit'
-import { Token } from 'iniswap-sdk'
+import { Token } from '@iniswap/sdk'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { TokenPairImage } from 'components/TokenImage'
 

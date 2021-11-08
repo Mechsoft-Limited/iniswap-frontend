@@ -1,5 +1,5 @@
 import React, { Fragment, memo } from 'react'
-import { Trade } from 'iniswap-sdk'
+import { Trade } from '@iniswap/sdk'
 import { Text, Flex, ChevronRightIcon } from '@iniswap/uikit'
 import { unwrappedToken } from 'utils/wrappedCurrency'
 

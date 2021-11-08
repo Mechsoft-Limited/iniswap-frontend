@@ -1,4 +1,4 @@
-import { Currency } from 'iniswap-sdk'
+import { Currency } from '@iniswap/sdk'
 import React from 'react'
 import styled from 'styled-components'
 import CurrencyLogo from './CurrencyLogo'

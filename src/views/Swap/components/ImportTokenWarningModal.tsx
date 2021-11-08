@@ -1,5 +1,5 @@
 import React from 'react'
-import { Token } from 'iniswap-sdk'
+import { Token } from '@iniswap/sdk'
 import { Modal, InjectedModalProps } from '@iniswap/uikit'
 import ImportToken from 'components/SearchModal/ImportToken'
 import { useTranslation } from 'contexts/Localization'

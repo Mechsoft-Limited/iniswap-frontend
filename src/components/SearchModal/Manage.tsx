@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Token } from 'iniswap-sdk'
+import { Token } from '@iniswap/sdk'
 import { ButtonMenu, ButtonMenuItem, ModalBody } from '@iniswap/uikit'
 import styled from 'styled-components'
 import { TokenList } from '@uniswap/token-lists'

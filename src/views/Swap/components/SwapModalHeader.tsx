@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { Trade, TradeType } from 'iniswap-sdk'
+import { Trade, TradeType } from '@iniswap/sdk'
 import { Button, Text, ErrorIcon, ArrowDownIcon } from '@iniswap/uikit'
 import { Field } from 'state/swap/actions'
 import { useTranslation } from 'contexts/Localization'

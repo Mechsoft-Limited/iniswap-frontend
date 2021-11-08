@@ -1,4 +1,4 @@
-import { ChainId, Token } from 'iniswap-sdk'
+import { ChainId, Token } from '@iniswap/sdk'
 import { serializeToken } from 'state/user/hooks/helpers'
 import { SerializedToken } from './types'
 

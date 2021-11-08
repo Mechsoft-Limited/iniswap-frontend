@@ -1,4 +1,4 @@
-import { Token, ChainId } from 'iniswap-sdk'
+import { Token, ChainId } from '@iniswap/sdk'
 import tokens from './tokens'
 import farms from './farms'
 import { Ifo } from './types'

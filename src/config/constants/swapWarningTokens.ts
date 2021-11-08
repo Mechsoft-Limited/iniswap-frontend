@@ -1,4 +1,4 @@
-import { Token } from 'iniswap-sdk'
+import { Token } from '@iniswap/sdk'
 import tokens from 'config/constants/tokens'
 
 const { bondly, safemoon } = tokens

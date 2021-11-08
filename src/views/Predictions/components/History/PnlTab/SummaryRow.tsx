@@ -1,5 +1,5 @@
 import React from 'react'
-import { Price } from 'iniswap-sdk'
+import { Price } from '@iniswap/sdk'
 import { Flex, Text } from '@iniswap/uikit'
 import { multiplyPriceByAmount } from 'utils/prices'
 import { useTranslation } from 'contexts/Localization'

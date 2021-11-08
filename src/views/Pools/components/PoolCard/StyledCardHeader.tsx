@@ -1,6 +1,6 @@
 import React from 'react'
 import { CardHeader, Heading, Text, Flex } from '@iniswap/uikit'
-import { Token } from 'iniswap-sdk'
+import { Token } from '@iniswap/sdk'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
 import { TokenPairImage } from 'components/TokenImage'

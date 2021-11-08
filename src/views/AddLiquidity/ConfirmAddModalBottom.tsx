@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Fraction, Percent } from 'iniswap-sdk'
+import { Currency, CurrencyAmount, Fraction, Percent } from '@iniswap/sdk'
 import React from 'react'
 import { Button, Text } from '@iniswap/uikit'
 import { useTranslation } from 'contexts/Localization'

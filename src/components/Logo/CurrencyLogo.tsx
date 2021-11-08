@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from 'iniswap-sdk'
+import { Currency, ETHER, Token } from '@iniswap/sdk'
 import { BinanceIcon } from '@iniswap/uikit'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'

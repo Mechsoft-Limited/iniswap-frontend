@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react'
-import { Token } from 'iniswap-sdk'
+import { Token } from '@iniswap/sdk'
 import { Button, Text, CheckmarkCircleIcon } from '@iniswap/uikit'
 import { AutoRow, RowFixed } from 'components/Layout/Row'
 import { AutoColumn } from 'components/Layout/Column'

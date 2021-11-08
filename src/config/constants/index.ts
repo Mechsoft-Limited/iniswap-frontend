@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Percent, Token } from 'iniswap-sdk'
+import { ChainId, JSBI, Percent, Token } from '@iniswap/sdk'
 import { mainnetTokens, testnetTokens } from './tokens'
 
 export const ROUTER_ADDRESS = '0x46De819A51cb9746372524EEbf79BEf68EAc85A2'

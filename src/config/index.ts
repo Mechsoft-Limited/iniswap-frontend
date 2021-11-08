@@ -1,4 +1,4 @@
-import { ChainId } from 'iniswap-sdk'
+import { ChainId } from '@iniswap/sdk'
 import BigNumber from 'bignumber.js/bignumber'
 import { BIG_TEN } from 'utils/bigNumber'
 

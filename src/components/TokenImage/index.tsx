@@ -6,7 +6,7 @@ import {
   ImageProps,
 } from '@iniswap/uikit'
 import tokens from 'config/constants/tokens'
-import { Token } from 'iniswap-sdk'
+import { Token } from '@iniswap/sdk'
 
 interface TokenPairImageProps extends Omit<UIKitTokenPairImageProps, 'primarySrc' | 'secondarySrc'> {
   primaryToken: Token

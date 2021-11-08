@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import { Currency, ETHER, JSBI, TokenAmount } from 'iniswap-sdk'
+import { Currency, ETHER, JSBI, TokenAmount } from '@iniswap/sdk'
 import { Button, ChevronDownIcon, Text, AddIcon, useModal } from '@iniswap/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'

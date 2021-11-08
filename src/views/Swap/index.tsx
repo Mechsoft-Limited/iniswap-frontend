@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import styled from 'styled-components'
-import { CurrencyAmount, JSBI, Token, Trade } from 'iniswap-sdk'
+import { CurrencyAmount, JSBI, Token, Trade } from '@iniswap/sdk'
 import { Button, Text, ArrowDownIcon, Box, useModal } from '@iniswap/uikit'
 import { useIsTransactionUnsupported } from 'hooks/Trades'
 import UnsupportedCurrencyFooter from 'components/UnsupportedCurrencyFooter'

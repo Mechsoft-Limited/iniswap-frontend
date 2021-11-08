@@ -1,5 +1,5 @@
 import React, { CSSProperties, MutableRefObject, useCallback, useMemo } from 'react'
-import { Currency, CurrencyAmount, currencyEquals, ETHER, Token } from 'iniswap-sdk'
+import { Currency, CurrencyAmount, currencyEquals, ETHER, Token } from '@iniswap/sdk'
 import { Text } from '@iniswap/uikit'
 import styled from 'styled-components'
 import { FixedSizeList } from 'react-window'

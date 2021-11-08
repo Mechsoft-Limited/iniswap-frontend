@@ -1,5 +1,5 @@
 import React from 'react'
-import { Trade, TradeType } from 'iniswap-sdk'
+import { Trade, TradeType } from '@iniswap/sdk'
 import { Text } from '@iniswap/uikit'
 import { Field } from 'state/swap/actions'
 import { useTranslation } from 'contexts/Localization'

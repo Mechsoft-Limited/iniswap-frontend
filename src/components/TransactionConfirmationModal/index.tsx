@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react'
-import { ChainId, Currency, Token } from 'iniswap-sdk'
+import { ChainId, Currency, Token } from '@iniswap/sdk'
 import styled from 'styled-components'
 import {
   Button,

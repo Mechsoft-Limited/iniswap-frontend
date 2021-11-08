@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Tag, Flex, Heading, Skeleton } from '@iniswap/uikit'
-import { Token } from 'iniswap-sdk'
+import { Token } from '@iniswap/sdk'
 import { CommunityTag, CoreTag } from 'components/Tags'
 import { TokenPairImage } from 'components/TokenImage'
 

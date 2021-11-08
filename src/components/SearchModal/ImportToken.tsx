@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Token, Currency } from 'iniswap-sdk'
+import { Token, Currency } from '@iniswap/sdk'
 import { Button, Text, ErrorIcon, Flex, Message, Checkbox, Link, Tag, Grid } from '@iniswap/uikit'
 import { AutoColumn } from 'components/Layout/Column'
 import { useAddUserToken } from 'state/user/hooks'

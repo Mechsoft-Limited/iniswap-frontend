@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from 'iniswap-sdk'
+import { Token, TokenAmount } from '@iniswap/sdk'
 import { useMemo } from 'react'
 
 import { useTokenContract } from './useContract'

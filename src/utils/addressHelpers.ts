@@ -1,4 +1,4 @@
-import { ChainId } from 'iniswap-sdk'
+import { ChainId } from '@iniswap/sdk'
 import addresses from 'config/constants/contracts'
 import { Address } from 'config/constants/types'
 

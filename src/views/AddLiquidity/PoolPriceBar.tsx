@@ -1,4 +1,4 @@
-import { Currency, Percent, Price } from 'iniswap-sdk'
+import { Currency, Percent, Price } from '@iniswap/sdk'
 import React from 'react'
 import { Text } from '@iniswap/uikit'
 import { useTranslation } from 'contexts/Localization'
