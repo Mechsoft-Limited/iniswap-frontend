@@ -1,5 +1,5 @@
 {
-  "name": "PancakeSwap Default List",
+  "name": "IniSwap Default List",
   "timestamp": "2021-05-06T00:00:00Z",
   "version": {
     "major": 3,
@@ -7,7 +7,7 @@
     "patch": 0
   },
   "tags": {},
-  "logoURI": "https://pancakeswap.finance/logo.png",
+  "logoURI": "https://iniswap.finance/logo.png",
   "keywords": ["pancake", "default"],
   "tokens": [
     {

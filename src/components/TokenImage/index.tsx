@@ -4,7 +4,7 @@ import {
   TokenPairImageProps as UIKitTokenPairImageProps,
   TokenImage as UIKitTokenImage,
   ImageProps,
-} from '@pancakeswap/uikit'
+} from '@iniswap/uikit'
 import tokens from 'config/constants/tokens'
 import { Token } from 'iniswap-sdk'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Trade, TradeType } from 'iniswap-sdk'
-import { Text } from '@pancakeswap/uikit'
+import { Text } from '@iniswap/uikit'
 import { Field } from 'state/swap/actions'
 import { useTranslation } from 'contexts/Localization'
 import { useUserSlippageTolerance } from 'state/user/hooks'

@@ -31,7 +31,7 @@
   "dependencies": {
     "@binance-chain/bsc-connector": "^1.0.0",
     "@ethersproject/experimental": "^5.0.1",
-    "@pancakeswap/uikit": "file:/media/ebundala/data46/data/my_projects/projects/iniswap/iniswap-toolkit/packages/pancake-uikit",
+    "@iniswap/uikit": "^0.0.1",
     "@reduxjs/toolkit": "^1.5.0",
     "@types/multicodec": "^1.0.0",
     "@types/node": "^13.13.5",

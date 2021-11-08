@@ -1,6 +1,6 @@
 import { Currency, Percent, Price } from 'iniswap-sdk'
 import React from 'react'
-import { Text } from '@pancakeswap/uikit'
+import { Text } from '@iniswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { AutoColumn } from '../../components/Layout/Column'
 import { AutoRow } from '../../components/Layout/Row'

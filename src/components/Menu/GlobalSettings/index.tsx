@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, IconButton, CogIcon, useModal } from '@pancakeswap/uikit'
+import { Flex, IconButton, CogIcon, useModal } from '@iniswap/uikit'
 import SettingsModal from './SettingsModal'
 
 const GlobalSettings = () => {
