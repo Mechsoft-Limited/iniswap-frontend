@@ -176,27 +176,38 @@ export default function AddLiquidity({
     }
 
     setAttemptingTxn(true)
-    await estimate(...args, value ? { value } : {})
-      .then((estimatedGasLimit) =>
-        method(...args, {
-          ...(value ? { value } : {}),
-          gasLimit: calculateGasMargin(estimatedGasLimit),
-          gasPrice,
-        }).then((response) => {
-          setAttemptingTxn(false)
+    const estimatedGasLimit = await estimate(...args, value ? { value } : {}).catch((err) => {
+      setAttemptingTxn(false)
+      // eslint-disable-next-line no-debugger
+      debugger
+      // we only care if the error is something _other_ than the user rejected the tx
+      if (err?.code !== 4001) {
+        console.error(err)
+      }
+    })
+    // eslint-disable-next-line no-debugger
+    debugger
+    const resp = await method(...args, {
+      ...(value ? { value } : {}),
+      gasLimit: calculateGasMargin(estimatedGasLimit),
+      gasPrice,
+    })
+      .then((response) => {
+        setAttemptingTxn(false)
 
-          addTransaction(response, {
-            summary: `Add ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(3)} ${
-              currencies[Field.CURRENCY_A]?.symbol
-            } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(3)} ${currencies[Field.CURRENCY_B]?.symbol}`,
-          })
+        addTransaction(response, {
+          summary: `Add ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(3)} ${
+            currencies[Field.CURRENCY_A]?.symbol
+          } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(3)} ${currencies[Field.CURRENCY_B]?.symbol}`,
+        })
 
-          setTxHash(response.hash)
-        }),
-      )
+        setTxHash(response.hash)
+      })
       .catch((err) => {
         setAttemptingTxn(false)
         // we only care if the error is something _other_ than the user rejected the tx
+        // eslint-disable-next-line no-debugger
+        debugger
         if (err?.code !== 4001) {
           console.error(err)
         }

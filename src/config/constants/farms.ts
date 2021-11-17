@@ -9,9 +9,9 @@ const farms: SerializedFarmConfig[] = [
    */
   {
     pid: 0,
-    lpSymbol: 'CAKE',
+    lpSymbol: 'INI',
     lpAddresses: {
-      97: '0x9C21123D94b93361a29B2C2EFB3d5CD8B17e0A9e',
+      97: '0xbDf0466D83b7F854d94E90D50548041e1Da3700D', // '0x9C21123D94b93361a29B2C2EFB3d5CD8B17e0A9e',
       56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
     },
     token: serializedTokens.syrup,
@@ -19,9 +19,9 @@ const farms: SerializedFarmConfig[] = [
   },
   {
     pid: 251,
-    lpSymbol: 'CAKE-BNB LP',
+    lpSymbol: 'INI-BNB LP',
     lpAddresses: {
-      97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
+      97: '0xe781E7edB65B65465034E3E4DE9261E29ac65390', // '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
       56: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
     },
     token: serializedTokens.cake,
@@ -31,7 +31,7 @@ const farms: SerializedFarmConfig[] = [
     pid: 252,
     lpSymbol: 'BUSD-BNB LP',
     lpAddresses: {
-      97: '',
+      97: '0x4fc3E4bF61DABE19390A33D43f5a4dD97dFd58A8',
       56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
     },
     token: serializedTokens.busd,

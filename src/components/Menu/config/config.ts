@@ -21,17 +21,18 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     ],
   },
   {
-    label: t('Earn (soon)'),
-    href: '#',
+    label: t('Earn'),
+    href: '/farms',
+
     icon: 'Earn',
     items: [
       {
-        label: t('Farms (soon)'),
-        href: '#',
+        label: t('Farms'),
+        href: '/farms',
       },
       {
-        label: t('Pools (soon)'),
-        href: '#',
+        label: t('Pools'),
+        href: '/pools',
       },
     ],
   },
@@ -49,17 +50,19 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
         href: '/lottery',
       },
     ],
-  },
-  {
+  }, */
+  /* {
     label: t('NFT'),
     href: '/collectibles',
     icon: 'Nft',
+    
     showOnMobile: false,
     showItemsOnMobile: false,
     items: [
       {
         label: t('Collectibles'),
         href: '/collectibles',
+        
       },
     ],
   }, */

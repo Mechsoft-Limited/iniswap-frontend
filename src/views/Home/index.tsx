@@ -97,15 +97,15 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        {/*  <OuterWedgeWrapper>
+        <OuterWedgeWrapper>
           <InnerWedgeWrapper width="150%" top fill={theme.colors.background}>
             <WedgeTopRight />
           </InnerWedgeWrapper>
-        </OuterWedgeWrapper> */}
-        {/*  <SalesSection {...earnSectionData} /> */}
-        {/* <FarmsPoolsRow /> */}
-        {/* </PageSection>
-      <PageSection
+        </OuterWedgeWrapper>
+        <SalesSection {...earnSectionData} />
+        <FarmsPoolsRow />
+      </PageSection>
+      {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={
           theme.isDark
@@ -114,9 +114,9 @@ const Home: React.FC = () => {
         }
         index={2}
         hasCurvedDivider={false}
-      > */}
-        {/*   <WinSection /> */}
-      </PageSection>
+      >
+           <WinSection /> }
+      </PageSection> */}
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.background}

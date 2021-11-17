@@ -1,7 +1,15 @@
 import { ChainId, JSBI, Percent, Token } from '@iniswap/sdk'
 import { mainnetTokens, testnetTokens } from './tokens'
 
-export const ROUTER_ADDRESS = '0x46De819A51cb9746372524EEbf79BEf68EAc85A2'
+export { ROUTER_ADDRESS } from '@iniswap/peripheral/build'
+
+// export const ROUTER_ADDRESS = '0xde13Aaa5e4a73FAaFEE53fEc6D34e648FEc5CeA0'
+// '0xe2220f6F172337234e0b912a9FfA3B66A9d3CEf2'
+// '0x02f843F048488998823537863AEC1daD551BB118'
+// '0xf1DCBDbe72d1100Ad3d01A779c01d60F787a17eC'
+// '0x9008DEcB2c79b15752B9F4c1EAe0C986D34264bd'
+// '0x5E6CF2C10531873020Ee6240c6a119db1EBDFA41'
+// '0x46De819A51cb9746372524EEbf79BEf68EAc85A2'
 // '0xa89d51874B166866CF4E9f94a3E1b01981D98CB6'
 
 // a list of tokens by chain

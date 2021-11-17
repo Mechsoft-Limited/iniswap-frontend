@@ -39,12 +39,12 @@ const Footer = () => {
   return (
     <Wrapper>
       <Flex flexDirection={['column', 'column', 'row']} alignItems="center">
-        <ButtonMenu variant="subtle" scale="sm" activeIndex={0}>
+        {/* <ButtonMenu variant="subtle" scale="sm" activeIndex={0}>
           <ButtonMenuItem>V2</ButtonMenuItem>
           <ButtonMenuItem as="a" href="https://v1exchange.pancakeswap.finance/#/">
             V1 (old)
           </ButtonMenuItem>
-        </ButtonMenu>
+        </ButtonMenu> */}
         <LinkExternal
           id="ercBridge"
           href="https://www.binance.org/en/bridge?utm_source=PancakeSwap"
@@ -66,7 +66,7 @@ const Footer = () => {
             id="clickExchangeHelp"
             as="a"
             external
-            href="https://docs.pancakeswap.finance/products/pancakeswap-exchange"
+            href="https://docs.iniswap.finance/products/pancakeswap-exchange"
             variant="subtle"
           >
             {t('Need help ?')}

@@ -1653,9 +1653,10 @@ export const testnetTokens = {
     'PancakeSwap Token',
     'https://pancakeswap.finance/',
   ),
+  bnb: new Token(TESTNET, '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd', 18, 'BNB', 'BNB', 'https://www.binance.com/'),
   ini: new Token(
     TESTNET,
-    '0x8c3d557e4c548612529d30763420f3c6e7bcfada',
+    '0xbDf0466D83b7F854d94E90D50548041e1Da3700D',
     18,
     'INI',
     'IniSwap Token',
@@ -1671,11 +1672,11 @@ export const testnetTokens = {
   ),
   syrup: new Token(
     TESTNET,
-    '0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9',
+    '0x5D03a5c5F7BED458F630973Ee53e662E513722ae', // '0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9',
     18,
-    'SYRUP',
-    'SyrupBar Token',
-    'https://pancakeswap.finance/',
+    'SAUCE',
+    'SauceBar Token',
+    'https://iniswap.finance/',
   ),
   bake: new Token(
     TESTNET,

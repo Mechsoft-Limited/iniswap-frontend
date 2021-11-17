@@ -36,3 +36,4 @@ yarn-error.log*
 debug.log*
 .firebase
 
+src/config/abi/old/
