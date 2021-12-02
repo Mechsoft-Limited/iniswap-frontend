@@ -1,11 +1,11 @@
 import { ChainId, Currency, currencyEquals, JSBI, Price } from '@iniswap/sdk'
 import { useMemo } from 'react'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
-import tokens, { mainnetTokens } from 'config/constants/tokens'
+import tokens, { mainnetTokens, testnetTokens } from 'config/constants/tokens'
 import { PairState, usePairs } from './usePairs'
 import { wrappedCurrency } from '../utils/wrappedCurrency'
 
-const BUSD_MAINNET = mainnetTokens.busd
+const BUSD_MAINNET = tokens.busd // TODO: change to on mainnet=mainnetTokens.busd
 const { wbnb: WBNB } = tokens
 
 /**
@@ -70,7 +70,7 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
 }
 
 export const useCakeBusdPrice = (): Price | undefined => {
-  const cakeBusdPrice = useBUSDPrice(tokens.cake)
+  const cakeBusdPrice = useBUSDPrice(tokens.ini)
   return cakeBusdPrice
 }
 

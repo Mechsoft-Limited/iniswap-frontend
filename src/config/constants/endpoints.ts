@@ -13,5 +13,5 @@ export const BITQUERY_API = 'https://graphql.bitquery.io'
  */
 export const GRAPH_API_PREDICTION_V1 = 'https://api.thegraph.com/subgraphs/name/pancakeswap/prediction'
 
-export const INFO_CLIENT = 'https://bsc.streamingfast.io/subgraphs/name/pancakeswap/exchange-v2'
-export const BLOCKS_CLIENT = 'https://api.thegraph.com/subgraphs/name/pancakeswap/blocks'
+export const INFO_CLIENT = 'http://172.105.244.91:8000/subgraphs/name/iniswap/exchange'
+export const BLOCKS_CLIENT = 'http://172.105.244.91:8000/subgraphs/name/iniswap/blocks'

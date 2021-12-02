@@ -6,8 +6,8 @@ import chunk from 'lodash/chunk'
 import { sub, getUnixTime } from 'date-fns'
 import farmsConfig from '../src/config/constants/farms'
 
-const BLOCK_SUBGRAPH_ENDPOINT = 'https://api.thegraph.com/subgraphs/name/pancakeswap/blocks'
-const STREAMING_FAST_ENDPOINT = 'https://bsc.streamingfast.io/subgraphs/name/pancakeswap/exchange-v2'
+const BLOCK_SUBGRAPH_ENDPOINT = 'http://172.105.244.91:8000/subgraphs/name/iniswap/blocks'
+const STREAMING_FAST_ENDPOINT = 'http://172.105.244.91:8000/subgraphs/name/iniswap/exchange'
 
 interface BlockResponse {
   blocks: {
@@ -31,7 +31,7 @@ interface AprMap {
 }
 
 const getWeekAgoTimestamp = () => {
-  const weekAgo = sub(new Date(), { weeks: 1 })
+  const weekAgo = sub(new Date(), { hours: 1 })
   return getUnixTime(weekAgo)
 }
 
@@ -75,6 +75,8 @@ const getAprsForFarmGroup = async (addresses: string[], blockWeekAgo: number): P
       `,
       { addresses, blockWeekAgo },
     )
+    // eslint-disable-next-line no-debugger
+    debugger
     const aprs: AprMap = farmsAtLatestBlock.reduce((aprMap, farm) => {
       const farmWeekAgo = farmsOneWeekAgo.find((oldFarm) => oldFarm.id === farm.id)
       // In case farm is too new to estimate LP APR (i.e. not returned in farmsOneWeekAgo query) - return 0
@@ -103,8 +105,8 @@ const getAprsForFarmGroup = async (addresses: string[], blockWeekAgo: number): P
 const fetchAndUpdateLPsAPR = async () => {
   // pids before 250 are inactive farms from v1 and failed v2 migration
   const lowerCaseAddresses = farmsConfig
-    .filter((farm) => farm.pid > 250)
-    .map((farm) => farm.lpAddresses[ChainId.MAINNET].toLowerCase())
+    .filter((farm) => farm.pid > 0)
+    .map((farm) => farm.lpAddresses[ChainId.TESTNET].toLowerCase())
   console.info(`Fetching farm data for ${lowerCaseAddresses.length} addresses`)
   // Split it into chunks of 30 addresses to avoid gateway timeout
   const addressesInGroups = chunk(lowerCaseAddresses, 30)

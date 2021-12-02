@@ -6,19 +6,19 @@ const serializedTokens = serializeTokens()
 const pools: SerializedPoolConfig[] = [
   {
     sousId: 0,
-    stakingToken: serializedTokens.cake,
-    earningToken: serializedTokens.cake,
+    stakingToken: serializedTokens.ini,
+    earningToken: serializedTokens.ini,
     contractAddress: {
-      97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
+      97: '0x26886C0e8c7f30ca4AfE892f3a0fF49fA669a6bA',
       56: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,
-    tokenPerBlock: '10',
+    tokenPerBlock: '1000',
     sortOrder: 1,
     isFinished: false,
   },
-  {
+  /*  {
     sousId: 220,
     stakingToken: serializedTokens.cake,
     earningToken: serializedTokens.chess,
@@ -2912,7 +2912,7 @@ const pools: SerializedPoolConfig[] = [
     tokenPerBlock: '0.25',
     sortOrder: 999,
     isFinished: true,
-  },
+  }, */
 ]
 
 export default pools

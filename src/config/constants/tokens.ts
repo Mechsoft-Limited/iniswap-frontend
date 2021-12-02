@@ -31,6 +31,14 @@ export const mainnetTokens = {
     'PancakeSwap Token',
     'https://pancakeswap.finance/',
   ),
+  ini: new Token(
+    TESTNET,
+    '0xbDf0466D83b7F854d94E90D50548041e1Da3700D',
+    18,
+    'INI',
+    'IniSwap Token',
+    'https://iniswap.finance/',
+  ),
   tlos: new Token(MAINNET, '0xb6C53431608E626AC81a9776ac3e999c5556717c', 18, 'TLOS', 'Telos', 'https://www.telos.net/'),
   stephero: new Token(
     MAINNET,
@@ -1662,12 +1670,30 @@ export const testnetTokens = {
     'IniSwap Token',
     'https://iniswap.finance/',
   ),
+
   busd: new Token(
     TESTNET,
     '0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee',
     18,
     'BUSD',
     'Binance USD',
+    'https://www.paxos.com/busd/',
+  ),
+
+  usdt: new Token(
+    TESTNET,
+    '0x7ef95a0fee0dd31b22626fa2e10ee6a223f8a684',
+    18,
+    'USDT',
+    'Tether USD',
+    'https://www.paxos.com/busd/',
+  ),
+  dai: new Token(
+    TESTNET,
+    '0x8a9424745056Eb399FD19a0EC26A14316684e274',
+    18,
+    'DAI',
+    'DAI',
     'https://www.paxos.com/busd/',
   ),
   syrup: new Token(
@@ -1690,7 +1716,6 @@ export const testnetTokens = {
 
 const tokens = (): TokenList => {
   const chainId = process.env.REACT_APP_CHAIN_ID
-
   // If testnet - return list comprised of testnetTokens wherever they exist, and mainnetTokens where they don't
   if (parseInt(chainId, 10) === ChainId.TESTNET) {
     return Object.keys(mainnetTokens).reduce((accum, key) => {
