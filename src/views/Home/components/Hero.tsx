@@ -75,14 +75,14 @@ const StarsWrapper = styled.div`
 `
 
 const imagePath = '/images/home/lunar-bunny/'
-const imageSrc = 'bunny'
+const imageSrc = 'buildings'
 
 const starsImage: CompositeImageProps = {
   path: '/images/home/lunar-bunny/',
   attributes: [
-    { src: 'star-l', alt: '3D Star' },
-    { src: 'star-r', alt: '3D Star' },
-    { src: 'star-top-r', alt: '3D Star' },
+    { src: 'block', alt: '3D Star' },
+    // { src: 'starv-r', alt: '3D Star' },
+    //  { src: 'starv-top-r', alt: '3D Star' },
   ],
 }
 
@@ -93,9 +93,9 @@ const Hero = () => {
 
   return (
     <>
-      <BgWrapper>
-        <InnerWrapper>{theme.isDark ? <SlideSvgDark width="100%" /> : <SlideSvgLight width="100%" />}</InnerWrapper>
-      </BgWrapper>
+      {/* <BgWrapper>
+        <InnerWrapper>{theme.isDark ? <SlideSvgDark width="100%"  /> : <SlideSvgLight width="100%"  />}</InnerWrapper>
+      </BgWrapper> */}
       <Flex
         position="relative"
         flexDirection={['column-reverse', null, null, 'row']}

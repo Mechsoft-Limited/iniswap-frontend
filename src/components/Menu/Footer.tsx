@@ -41,7 +41,7 @@ const Footer = () => {
       <Flex flexDirection={['column', 'column', 'row']} alignItems="center">
         {/* <ButtonMenu variant="subtle" scale="sm" activeIndex={0}>
           <ButtonMenuItem>V2</ButtonMenuItem>
-          <ButtonMenuItem as="a" href="https://v1exchange.pancakeswap.finance/#/">
+          <ButtonMenuItem as="a" href="https://v1exchange.iniswap.finance/#/">
             V1 (old)
           </ButtonMenuItem>
         </ButtonMenu> */}
@@ -66,7 +66,7 @@ const Footer = () => {
             id="clickExchangeHelp"
             as="a"
             external
-            href="https://docs.iniswap.finance/products/pancakeswap-exchange"
+            href="https://docs.iniswap.finance/products/iniswap-exchange"
             variant="subtle"
           >
             {t('Need help ?')}
@@ -75,7 +75,7 @@ const Footer = () => {
             <path d="M0 16V0C0 0 3 1 6 1C9 1 16 -2 16 3.5C16 10.5 7.5 16 0 16Z" />
           </Svg>
         </BubbleWrapper>
-        <Image src="/images/help.svg" alt="Get some help" width={160} height={108} />
+        {/* <Image src="/images/help.svg" alt="Get some help" width={160} height={108} /> */}
       </Flex>
     </Wrapper>
   )

@@ -1,11 +1,11 @@
 import { ChainId, Currency, currencyEquals, JSBI, Price } from '@iniswap/sdk'
 import { useMemo } from 'react'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
-import tokens, { mainnetTokens, testnetTokens } from 'config/constants/tokens'
+import tokens, { testnetTokens } from 'config/constants/tokens'
 import { PairState, usePairs } from './usePairs'
 import { wrappedCurrency } from '../utils/wrappedCurrency'
 
-const BUSD_MAINNET = tokens.busd // TODO: change to on mainnet=mainnetTokens.busd
+const BUSD_MAINNET = testnetTokens.busd // TODO: change to on mainnet=mainnetTokens.busd
 const { wbnb: WBNB } = tokens
 
 /**
@@ -14,18 +14,22 @@ const { wbnb: WBNB } = tokens
  */
 export default function useBUSDPrice(currency?: Currency): Price | undefined {
   const { chainId } = useActiveWeb3React()
+
   const wrapped = wrappedCurrency(currency, chainId)
   const tokenPairs: [Currency | undefined, Currency | undefined][] = useMemo(
     () => [
       [chainId && wrapped && currencyEquals(WBNB, wrapped) ? undefined : currency, chainId ? WBNB : undefined],
-      [wrapped?.equals(BUSD_MAINNET) ? undefined : wrapped, chainId === ChainId.MAINNET ? BUSD_MAINNET : undefined],
-      [chainId ? WBNB : undefined, chainId === ChainId.MAINNET ? BUSD_MAINNET : undefined],
+      [wrapped?.equals(BUSD_MAINNET) ? undefined : wrapped, chainId === ChainId.TESTNET ? BUSD_MAINNET : undefined],
+      [chainId ? WBNB : undefined, chainId === ChainId.TESTNET ? BUSD_MAINNET : undefined],
     ],
     [chainId, currency, wrapped],
   )
+
   const [[ethPairState, ethPair], [busdPairState, busdPair], [busdEthPairState, busdEthPair]] = usePairs(tokenPairs)
 
   return useMemo(() => {
+    // eslint-disable-next-line no-debugger
+    // debugger;
     if (!currency || !wrapped || !chainId) {
       return undefined
     }
@@ -71,6 +75,7 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
 
 export const useCakeBusdPrice = (): Price | undefined => {
   const cakeBusdPrice = useBUSDPrice(tokens.ini)
+
   return cakeBusdPrice
 }
 

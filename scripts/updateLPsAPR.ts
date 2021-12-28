@@ -31,7 +31,7 @@ interface AprMap {
 }
 
 const getWeekAgoTimestamp = () => {
-  const weekAgo = sub(new Date(), { hours: 1 })
+  const weekAgo = sub(new Date(), { weeks: 1 })
   return getUnixTime(weekAgo)
 }
 
@@ -75,8 +75,7 @@ const getAprsForFarmGroup = async (addresses: string[], blockWeekAgo: number): P
       `,
       { addresses, blockWeekAgo },
     )
-    // eslint-disable-next-line no-debugger
-    debugger
+
     const aprs: AprMap = farmsAtLatestBlock.reduce((aprMap, farm) => {
       const farmWeekAgo = farmsOneWeekAgo.find((oldFarm) => oldFarm.id === farm.id)
       // In case farm is too new to estimate LP APR (i.e. not returned in farmsOneWeekAgo query) - return 0

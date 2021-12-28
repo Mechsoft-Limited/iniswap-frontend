@@ -51,11 +51,11 @@ const FarmsPoolsRow = () => {
 
   const getPoolText = (pool: DeserializedPool) => {
     if (pool.isAutoVault) {
-      return t('Auto CAKE')
+      return t('Auto INI')
     }
 
     if (pool.sousId === 0) {
-      return t('Manual CAKE')
+      return t('Manual INI')
     }
 
     return t('Stake %stakingSymbol% - Earn %earningSymbol%', {
@@ -96,16 +96,18 @@ const FarmsPoolsRow = () => {
             ))}
           </Grid>
           <Grid>
-            {topPools.map((topPool, index) => (
-              <TopFarmPool
-                // eslint-disable-next-line react/no-array-index-key
-                key={index}
-                title={topPool && getPoolText(topPool)}
-                percentage={topPool?.apr}
-                index={index}
-                visible={!showFarms}
-              />
-            ))}
+            {topPools
+              .filter((p) => !p?.isAutoVault)
+              .map((topPool, index) => (
+                <TopFarmPool
+                  // eslint-disable-next-line react/no-array-index-key
+                  key={index}
+                  title={topPool && getPoolText(topPool)}
+                  percentage={topPool?.apr}
+                  index={index}
+                  visible={!showFarms}
+                />
+              ))}
           </Grid>
         </Box>
       </Flex>

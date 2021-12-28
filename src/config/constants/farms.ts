@@ -515,7 +515,7 @@ const farms: SerializedFarmConfig[] = [
   //   },
   //   {
   //     pid: 422,
-  //     lpSymbol: 'CAKE-USDT LP',
+  //     lpSymbol: 'INI-USDT LP',
   //     lpAddresses: {
   //       97: '',
   //       56: '0xA39Af17CE4a8eb807E076805Da1e2B8EA7D0755b',

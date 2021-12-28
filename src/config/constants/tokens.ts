@@ -222,7 +222,7 @@ export const mainnetTokens = {
     '0xdB8D30b74bf098aF214e862C90E647bbB1fcC58c',
     18,
     'BABYCAKE',
-    'Baby Cake Token',
+    'Baby INI Token',
     'https://babycake.app/',
   ),
   bmon: new Token(
@@ -1673,7 +1673,8 @@ export const testnetTokens = {
 
   busd: new Token(
     TESTNET,
-    '0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee',
+    '0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7',
+    // '0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee',
     18,
     'BUSD',
     'Binance USD',
@@ -1690,7 +1691,7 @@ export const testnetTokens = {
   ),
   dai: new Token(
     TESTNET,
-    '0x8a9424745056Eb399FD19a0EC26A14316684e274',
+    '0xEC5dCb5Dbf4B114C9d0F65BcCAb49EC54F6A0867',
     18,
     'DAI',
     'DAI',

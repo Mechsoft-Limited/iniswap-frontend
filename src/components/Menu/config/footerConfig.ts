@@ -7,28 +7,28 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Contact'),
-        href: 'https://docs.pancakeswap.finance/contact-us',
+        href: 'https://docs.iniswap.finance/contact-us',
       },
       {
         label: t('Blog'),
-        href: 'https://pancakeswap.medium.com/',
+        href: 'https://iniswap.medium.com/',
       },
       {
         label: t('Community'),
-        href: 'https://docs.pancakeswap.finance/contact-us/telegram',
+        href: 'https://docs.iniswap.finance/contact-us/telegram',
       },
       {
-        label: t('CAKE token'),
-        href: 'https://docs.pancakeswap.finance/tokenomics/cake',
+        label: t('INI token'),
+        href: 'https://docs.iniswap.finance/tokenomics/ini',
       },
-      {
-        label: '—',
-      },
-      {
-        label: t('Online Store'),
-        href: 'https://pancakeswap.creator-spring.com/',
-        isHighlighted: true,
-      },
+      // {
+      //   label: '—',
+      // },
+      // {
+      //   label: t('Online Store'),
+      //   href: 'https://pancakeswap.creator-spring.com/',
+      //   isHighlighted: true,
+      // },
     ],
   },
   {
@@ -36,15 +36,15 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Customer Support'),
-        href: 'https://docs.pancakeswap.finance/contact-us/customer-support',
+        href: 'https://docs.iniswap.finance/contact-us/customer-support',
       },
       {
         label: t('Troubleshooting'),
-        href: 'https://docs.pancakeswap.finance/help/troubleshooting',
+        href: 'https://docs.iniswap.finance/help/troubleshooting',
       },
       {
         label: t('Guides'),
-        href: 'https://docs.pancakeswap.finance/get-started',
+        href: 'https://docs.iniswap.finance/get-started',
       },
     ],
   },
@@ -53,24 +53,24 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: 'Github',
-        href: 'https://github.com/pancakeswap',
+        href: 'https://github.com/iniswap',
       },
       {
         label: t('Documentation'),
-        href: 'https://docs.pancakeswap.finance',
+        href: 'https://docs.iniswap.finance',
       },
-      {
-        label: t('Bug Bounty'),
-        href: 'https://app.gitbook.com/@pancakeswap-1/s/pancakeswap/code/bug-bounty',
-      },
+      // {
+      //   label: t('Bug Bounty'),
+      //   href: 'https://app.gitbook.com/@pancakeswap-1/s/pancakeswap/code/bug-bounty',
+      // },
       {
         label: t('Audits'),
-        href: 'https://docs.pancakeswap.finance/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited',
+        href: 'https://docs.iniswap.finance/help/faq#is-iniswap-safe-has-iniswap-been-audited',
       },
-      {
-        label: t('Careers'),
-        href: 'https://docs.pancakeswap.finance/hiring/become-a-chef',
-      },
+      // {
+      //   label: t('Careers'),
+      //   href: 'https://docs.iniswap.finance/hiring/become-a-chef',
+      // },
     ],
   },
 ]

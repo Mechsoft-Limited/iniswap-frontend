@@ -36,6 +36,38 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
       },
     ],
   },
+
+  {
+    label: t('Whitepaper'),
+    href: 'https://docs.iniswap.finance/whitepaper',
+    target: '_blank',
+    showItemsOnMobile: false,
+    // icon: 'Trophy',
+    items: [
+      {
+        label: t('Whitepaper'),
+        href: 'https://docs.iniswap.finance/whitepaper',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
+      },
+      {
+        label: t('Features'),
+        href: 'https://docs.iniswap.finance/whitepaper#features',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
+      },
+      {
+        label: t('Tokenomics'),
+        href: 'https://docs.iniswap.finance/tokenomics/ini/ini-tokenomics',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
+      },
+      {
+        label: t('Roadmap'),
+        href: 'https://docs.iniswap.finance/roadmap',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
+
+        // icon: 'Trophy',
+      },
+    ],
+  },
   /* {
     label: t('Win'),
     href: '/prediction',
@@ -50,22 +82,21 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
         href: '/lottery',
       },
     ],
-  }, */
-  /* {
+  } */ {
     label: t('NFT'),
     href: '/collectibles',
     icon: 'Nft',
-    
+
     showOnMobile: false,
     showItemsOnMobile: false,
     items: [
       {
         label: t('Collectibles'),
         href: '/collectibles',
-        
       },
     ],
-  }, */
+  },
+
   {
     label: '',
     href: '/info',
@@ -85,18 +116,25 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
         href: '/voting',
       }, */
       {
+        label: t('Team'),
+        href: 'https://docs.iniswap.finance/team',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
+        // icon: 'Trophy',
+      },
+
+      {
         type: DropdownMenuItemType.DIVIDER,
       },
       /*  {
         label: t('Leaderboard'),
         href: '/teams',
       }, */
-      {
-        type: DropdownMenuItemType.DIVIDER,
-      },
+      // {
+      //   type: DropdownMenuItemType.DIVIDER,
+      // },
       {
         label: t('Blog'),
-        href: 'https://pancakeswap.medium.com',
+        href: 'https://iniswap.medium.com',
         type: DropdownMenuItemType.EXTERNAL_LINK,
       },
       {

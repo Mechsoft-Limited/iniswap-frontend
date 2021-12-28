@@ -234,7 +234,9 @@ const Pools: React.FC = () => {
     )
   }
 
-  chosenPools = sortPools(chosenPools).slice(0, numberOfPoolsVisible)
+  chosenPools = sortPools(chosenPools)
+    .filter((p) => !p?.isAutoVault)
+    .slice(0, numberOfPoolsVisible)
   chosenPoolsLength.current = chosenPools.length
 
   const cardLayout = (
@@ -268,7 +270,7 @@ const Pools: React.FC = () => {
           </Flex>
           <Flex flex="1" height="fit-content" justifyContent="center" alignItems="center" mt={['24px', null, '0']}>
             <HelpButton />
-            <BountyCard />
+            {/*  <BountyCard /> */}
           </Flex>
         </Flex>
       </PageHeader>
@@ -330,14 +332,14 @@ const Pools: React.FC = () => {
         )}
         {viewMode === ViewMode.CARD ? cardLayout : tableLayout}
         <div ref={observerRef} />
-        <Image
+        {/*  <Image
           mx="auto"
           mt="12px"
           src="/images/decorations/3d-syrup-bunnies.png"
           alt="Pancake illustration"
           width={192}
           height={184.5}
-        />
+        /> */}
       </Page>
     </>
   )
