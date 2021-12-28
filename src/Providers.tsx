@@ -53,7 +53,7 @@ const ThemeProviderWrapper = (props) => {
   // debugger
 
   //   light.colors={...light.colors,...colors.colors,gradients:colors.gradients}
-  //  const theme = isDark ? dark : light;
+  const theme = isDark ? dark : light
   //  theme.card.background=theme.colors.backgroundAlt;
   //  theme.modal.background=theme.colors.backgroundAlt;
   //  theme.alert.background = theme.colors.backgroundAlt;
