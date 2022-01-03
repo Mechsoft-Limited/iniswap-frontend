@@ -1684,6 +1684,7 @@ export const testnetTokens = {
   usdt: new Token(
     TESTNET,
     '0x7ef95a0fee0dd31b22626fa2e10ee6a223f8a684',
+    // "0x337610d27c682e347c9cd60bd4b3b107c9d34ddd"
     18,
     'USDT',
     'Tether USD',
