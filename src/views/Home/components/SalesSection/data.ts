@@ -26,7 +26,7 @@ export const swapSectionData: SalesSectionProps = {
 
 export const earnSectionData: SalesSectionProps = {
   headingText: 'Earn passive income with crypto.',
-  bodyText: 'iniswap makes it easy to make your crypto work for you.',
+  bodyText: 'IniSwap makes it easy to make your crypto work for you.',
   reverse: false,
   primaryButton: {
     to: '/farms',
