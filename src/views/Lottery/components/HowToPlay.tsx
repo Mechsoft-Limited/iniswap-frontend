@@ -325,7 +325,7 @@ const HowToPlay: React.FC = () => {
                 {t(
                   'An average total of 35,000 INI from the treasury is added to lottery rounds over the course of a week. This INI is of course also included in rollovers! Read more in our guide to ',
                 )}
-                <InlineLink href="https://docs.iniswap.finance/tokenomics/cake/cake-tokenomics">
+                <InlineLink href="https://docs.iniswap.finance/tokenomics/ini/ini-tokenomics">
                   {t('INI Tokenomics')}
                 </InlineLink>
               </Text>
@@ -346,7 +346,7 @@ const HowToPlay: React.FC = () => {
           <Text>
             {t('Check our in-depth guide on')}{' '}
             <InlineLink href="https://docs.iniswap.finance/products/lottery/lottery-guide">
-              {t('how to play the PancakeSwap lottery!')}
+              {t('how to play the IniSwap lottery!')}
             </InlineLink>
           </Text>
         </Flex>

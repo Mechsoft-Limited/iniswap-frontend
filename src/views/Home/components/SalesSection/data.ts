@@ -26,7 +26,7 @@ export const swapSectionData: SalesSectionProps = {
 
 export const earnSectionData: SalesSectionProps = {
   headingText: 'Earn passive income with crypto.',
-  bodyText: 'pancakeswap makes it easy to make your crypto work for you.',
+  bodyText: 'iniswap makes it easy to make your crypto work for you.',
   reverse: false,
   primaryButton: {
     to: '/farms',
@@ -51,7 +51,7 @@ export const earnSectionData: SalesSectionProps = {
 export const cakeSectionData: SalesSectionProps = {
   headingText: 'INI makes our world go round.',
   bodyText:
-    'INI token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'INI token is at the heart of the IniSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,
   primaryButton: {
     to: '/swap?outputCurrency=0xbDf0466D83b7F854d94E90D50548041e1Da3700D',

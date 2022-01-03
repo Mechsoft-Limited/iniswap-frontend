@@ -31,7 +31,7 @@ const AuctionCakeBurn: React.FC = () => {
         const amountAsBN = ethersToBigNumber(amount)
         setBurnedCakeAmount(getBalanceNumber(amountAsBN))
       } catch (error) {
-        console.error('Failed to fetch burned auction cake', error)
+        console.error('Failed to fetch burned auction INI', error)
       }
     }
     if (burnedCakeAmount === 0) {

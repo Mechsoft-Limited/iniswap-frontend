@@ -29,7 +29,7 @@ const StyledCardHeader: React.FC<{
       return t('Auto')
     }
     if (isCakePool) {
-      // manual cake
+      // manual INI
       return t('Manual')
     }
     // all other pools

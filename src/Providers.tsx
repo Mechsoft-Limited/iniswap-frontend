@@ -52,11 +52,12 @@ const ThemeProviderWrapper = (props) => {
   // eslint-disable-next-line no-debugger
   // debugger
 
-  //   light.colors={...light.colors,...colors.colors,gradients:colors.gradients}
+  light.colors = { ...light.colors, ...colors.colors, gradients: colors.gradients }
   const theme = isDark ? dark : light
-  //  theme.card.background=theme.colors.backgroundAlt;
-  //  theme.modal.background=theme.colors.backgroundAlt;
-  //  theme.alert.background = theme.colors.backgroundAlt;
+  theme.card.background = theme.colors.backgroundAlt
+  theme.modal.background = theme.colors.backgroundAlt
+  theme.alert.background = theme.colors.backgroundAlt
+  theme.nav.background = theme.colors.backgroundAlt2
 
   return <ThemeProvider theme={theme} {...props} />
 }
