@@ -40,33 +40,27 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   {
     label: t('Whitepaper'),
     href: 'https://docs.iniswap.finance/whitepaper',
-    target: '_blank',
     showItemsOnMobile: false,
+    items: [],
     // icon: 'Trophy',
-    items: [
-      {
-        label: t('Whitepaper'),
-        href: 'https://docs.iniswap.finance/whitepaper',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
-      {
-        label: t('Features'),
-        href: 'https://docs.iniswap.finance/whitepaper#features',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
-      {
-        label: t('Tokenomics'),
-        href: 'https://docs.iniswap.finance/tokenomics/ini/ini-tokenomics',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
-      {
-        label: t('Roadmap'),
-        href: 'https://docs.iniswap.finance/roadmap',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
+    // items: [
+    //   {
+    //     label: t('Whitepaper'),
+    //     href: 'https://docs.iniswap.finance/whitepaper',
+    //     type: DropdownMenuItemType.EXTERNAL_LINK,
+    //   },
+    //   {
+    //     label: t('Features'),
+    //     href: 'https://docs.iniswap.finance/whitepaper#features',
+    //     type: DropdownMenuItemType.EXTERNAL_LINK,
+    //   },
+    //   {
+    //     label: t('Tokenomics'),
+    //     href: 'https://docs.iniswap.finance/tokenomics/ini/ini-tokenomics',
+    //     type: DropdownMenuItemType.EXTERNAL_LINK,
+    //   },
 
-        // icon: 'Trophy',
-      },
-    ],
+    // ],
   },
   /* {
     label: t('Win'),
@@ -89,10 +83,15 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
 
     showOnMobile: false,
     showItemsOnMobile: false,
+
     items: [
       {
         label: t('Collectibles'),
-        href: '/collectibles',
+        href: '#/collectibles',
+        status: {
+          text: t('Coming Soon'),
+          color: 'warning',
+        },
       },
     ],
   },
@@ -106,6 +105,13 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
       {
         label: t('Info'),
         href: '/info',
+      },
+      {
+        label: t('Roadmap'),
+        href: 'https://docs.iniswap.finance/roadmap',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
+
+        // icon: 'Trophy',
       },
       /* {
         label: t('IFO'),
@@ -134,7 +140,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
       // },
       {
         label: t('Blog'),
-        href: 'https://iniswap.medium.com',
+        href: 'https://medium.com/@iniswapfinance',
         type: DropdownMenuItemType.EXTERNAL_LINK,
       },
       {
