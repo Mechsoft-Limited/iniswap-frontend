@@ -41,26 +41,25 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     label: t('Whitepaper'),
     href: 'https://docs.iniswap.finance/whitepaper',
     showItemsOnMobile: false,
-    items: [],
+    hideSubNav: true,
     // icon: 'Trophy',
-    // items: [
-    //   {
-    //     label: t('Whitepaper'),
-    //     href: 'https://docs.iniswap.finance/whitepaper',
-    //     type: DropdownMenuItemType.EXTERNAL_LINK,
-    //   },
-    //   {
-    //     label: t('Features'),
-    //     href: 'https://docs.iniswap.finance/whitepaper#features',
-    //     type: DropdownMenuItemType.EXTERNAL_LINK,
-    //   },
-    //   {
-    //     label: t('Tokenomics'),
-    //     href: 'https://docs.iniswap.finance/tokenomics/ini/ini-tokenomics',
-    //     type: DropdownMenuItemType.EXTERNAL_LINK,
-    //   },
-
-    // ],
+    items: [
+      {
+        label: t('Whitepaper'),
+        href: 'https://docs.iniswap.finance/whitepaper',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
+      },
+      //   {
+      //     label: t('Features'),
+      //     href: 'https://docs.iniswap.finance/whitepaper#features',
+      //     type: DropdownMenuItemType.EXTERNAL_LINK,
+      //   },
+      //   {
+      //     label: t('Tokenomics'),
+      //     href: 'https://docs.iniswap.finance/tokenomics/ini/ini-tokenomics',
+      //     type: DropdownMenuItemType.EXTERNAL_LINK,
+      //   },
+    ],
   },
   /* {
     label: t('Win'),
