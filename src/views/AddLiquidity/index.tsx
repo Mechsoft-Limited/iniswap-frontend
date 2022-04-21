@@ -178,8 +178,6 @@ export default function AddLiquidity({
     setAttemptingTxn(true)
     const estimatedGasLimit = await estimate(...args, value ? { value } : {}).catch((err) => {
       setAttemptingTxn(false)
-      // eslint-disable-next-line no-debugger
-      debugger
       // we only care if the error is something _other_ than the user rejected the tx
       if (err?.code !== 4001) {
         console.error(err)

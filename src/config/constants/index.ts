@@ -3,7 +3,7 @@ import { mainnetTokens, testnetTokens } from './tokens'
 
 export { ROUTER_ADDRESS } from '@iniswap/peripheral/build'
 
-// export const ROUTER_ADDRESS = '0xde13Aaa5e4a73FAaFEE53fEc6D34e648FEc5CeA0'
+// export const ROUTER_ADDRESS = '0xD22071Ecb55A0fF5A7fb084F9b6B760456b23783'
 // '0xe2220f6F172337234e0b912a9FfA3B66A9d3CEf2'
 // '0x02f843F048488998823537863AEC1daD551BB118'
 // '0xf1DCBDbe72d1100Ad3d01A779c01d60F787a17eC'
@@ -21,7 +21,7 @@ type ChainTokenList = {
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.MAINNET]: [
     mainnetTokens.wbnb,
-    mainnetTokens.cake,
+    mainnetTokens.ini,
     mainnetTokens.busd,
     mainnetTokens.usdt,
     mainnetTokens.btcb,
@@ -51,19 +51,19 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
-  [ChainId.MAINNET]: [mainnetTokens.busd, mainnetTokens.cake, mainnetTokens.btcb],
+  [ChainId.MAINNET]: [mainnetTokens.busd, mainnetTokens.ini, mainnetTokens.btcb],
   [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.ini, testnetTokens.busd],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
-  [ChainId.MAINNET]: [mainnetTokens.wbnb, mainnetTokens.dai, mainnetTokens.busd, mainnetTokens.usdt],
+  [ChainId.MAINNET]: [mainnetTokens.wbnb, mainnetTokens.dai, mainnetTokens.ini, mainnetTokens.busd, mainnetTokens.usdt],
   [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.ini, testnetTokens.busd, testnetTokens.usdt],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
-    [mainnetTokens.cake, mainnetTokens.wbnb],
+    [mainnetTokens.ini, mainnetTokens.wbnb],
     [mainnetTokens.busd, mainnetTokens.usdt],
     [mainnetTokens.dai, mainnetTokens.usdt],
   ],

@@ -54,12 +54,12 @@ export const cakeSectionData: SalesSectionProps = {
     'INI token is at the heart of the IniSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,
   primaryButton: {
-    to: '/swap?outputCurrency=0xbDf0466D83b7F854d94E90D50548041e1Da3700D',
+    to: '/swap?outputCurrency=0x4EFB710AB24396c29d2313B3518dA6BDc2F5c53d',
     text: 'Buy INI',
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.iniswap.finance/tokenomics/ini',
+    to: 'https://docs.iniswap.finance/',
     text: 'Learn',
     external: true,
   },

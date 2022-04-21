@@ -80,12 +80,17 @@ export const useBnbPrices = (): BnbPrices | undefined => {
   const [error, setError] = useState(false)
 
   const [t24, t48, tWeek] = getDeltaTimestamps()
+
   const { blocks, error: blockError } = useBlocksFromTimestamps([t24, t48, tWeek])
 
   useEffect(() => {
     const fetch = async () => {
       const [block24, block48, blockWeek] = blocks
-      const { bnbPrices, error: fetchError } = await fetchBnbPrices(block24.number, block48.number, blockWeek.number)
+      const { bnbPrices, error: fetchError } = await fetchBnbPrices(
+        block24?.number,
+        block48?.number,
+        blockWeek?.number ?? block48?.number,
+      )
       if (fetchError) {
         setError(true)
       } else {

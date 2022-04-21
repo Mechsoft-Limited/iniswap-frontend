@@ -31,9 +31,9 @@
   "dependencies": {
     "@binance-chain/bsc-connector": "^1.0.0",
     "@ethersproject/experimental": "^5.0.1",
-    "@iniswap/peripheral": "^0.0.1",
-    "@iniswap/sdk": "^0.0.6",
-    "@iniswap/uikit": "0.0.9",
+    "@iniswap/peripheral": "1.0.3",                                                                                                                                                                                                                                                                                                                                 
+    "@iniswap/sdk": "1.0.2",
+    "@iniswap/uikit": "1.0.1",
     "@reduxjs/toolkit": "^1.5.0",
     "@types/multicodec": "^1.0.0",
     "@types/node": "^13.13.5",

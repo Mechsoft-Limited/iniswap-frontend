@@ -11,7 +11,7 @@ export const BITQUERY_API = 'https://graphql.bitquery.io'
 /**
  * V1 will be deprecated but is still used to claim old rounds
  */
-export const GRAPH_API_PREDICTION_V1 = 'https://api.thegraph.com/subgraphs/name/pancakeswap/prediction'
+export const GRAPH_API_PREDICTION_V1 = 'https://api.thegraph.com/subgraphs/name/iniswap/prediction'
 
-export const INFO_CLIENT = 'http://172.105.244.91:8000/subgraphs/name/iniswap/exchange'
-export const BLOCKS_CLIENT = 'http://172.105.244.91:8000/subgraphs/name/iniswap/blocks'
+export const INFO_CLIENT = 'https://api.thegraph.com/subgraphs/name/iniswap/exchange'
+export const BLOCKS_CLIENT = 'https://api.thegraph.com/subgraphs/name/iniswap/blocks'

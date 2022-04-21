@@ -11,14 +11,21 @@
   "keywords": ["ini", "default"],
   "tokens": [
     {
-      "name": "INI Token",
+      "name": "Iniswap Token",
       "symbol": "INI",
       "address": "0xbDf0466D83b7F854d94E90D50548041e1Da3700D",
       "chainId": 97,
       "decimals": 18,
       "logoURI": "https://iniswap.finance/images/tokens/0xbDf0466D83b7F854d94E90D50548041e1Da3700D.png"
     },
-    
+    {
+      "name": "Iniswap Token",
+      "symbol": "INI",
+      "address": "0x4EFB710AB24396c29d2313B3518dA6BDc2F5c53d",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://iniswap.finance/images/tokens/0x4EFB710AB24396c29d2313B3518dA6BDc2F5c53d.png"
+    },
     {
       "name": "WBNB Token",
       "symbol": "WBNB",

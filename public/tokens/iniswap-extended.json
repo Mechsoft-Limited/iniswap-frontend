@@ -14,6 +14,14 @@
     ],
     "tokens": [
       {
+        "name": "Iniswap Token",
+        "symbol": "INI",
+        "address": "0x4EFB710AB24396c29d2313B3518dA6BDc2F5c53d",
+        "chainId": 56,
+        "decimals": 18,
+        "logoURI": "https://iniswap.finance/images/tokens/0x4EFB710AB24396c29d2313B3518dA6BDc2F5c53d.png"
+      },
+      {
         "name": "PancakeSwap Token",
         "symbol": "CAKE",
         "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",

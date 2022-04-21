@@ -39,9 +39,9 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
 
   {
     label: t('Whitepaper'),
-    href: 'https://docs.iniswap.finance/whitepaper',
-    showItemsOnMobile: false,
-    hideSubNav: true,
+    href: '#',
+    showItemsOnMobile: true,
+
     // icon: 'Trophy',
     items: [
       {
@@ -120,12 +120,12 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
         label: t('Voting'),
         href: '/voting',
       }, */
-      {
-        label: t('Team'),
-        href: 'https://docs.iniswap.finance/team',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-        // icon: 'Trophy',
-      },
+      // {
+      //   label: t('Team'),
+      //   href: 'https://docs.iniswap.finance/team',
+      //   type: DropdownMenuItemType.EXTERNAL_LINK,
+      //   // icon: 'Trophy',
+      // },
 
       {
         type: DropdownMenuItemType.DIVIDER,

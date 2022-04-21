@@ -5,91 +5,91 @@ const serializedTokens = serializeTokens()
 
 const farms: SerializedFarmConfig[] = [
   /**
-   * These 3 farms (PID 0, 251, 252) should always be at the top of the file.
+   * These 3 farms (PID 0, 1, 2) should always be at the top of the file.
    */
   {
     pid: 0,
     lpSymbol: 'INI',
     lpAddresses: {
       97: '0xbDf0466D83b7F854d94E90D50548041e1Da3700D', // '0x9C21123D94b93361a29B2C2EFB3d5CD8B17e0A9e',
-      56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+      56: '0x4EFB710AB24396c29d2313B3518dA6BDc2F5c53d',
     },
     token: serializedTokens.syrup,
     quoteToken: serializedTokens.wbnb,
   },
+  // {
+  //   pid: 5,
+  //   lpSymbol: 'INI-BNB LP',
+  //   lpAddresses: {
+  //     97: '0xC037c78D3a382DC15c94C3e3edF7A54E5142604e', // '0xe781E7edB65B65465034E3E4DE9261E29ac65390', // '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
+  //     56: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
+  //   },
+  //   token: serializedTokens.ini,
+  //   quoteToken: serializedTokens.wbnb,
+  // },
   {
-    pid: 5,
-    lpSymbol: 'INI-BNB LP',
-    lpAddresses: {
-      97: '0xC037c78D3a382DC15c94C3e3edF7A54E5142604e', // '0xe781E7edB65B65465034E3E4DE9261E29ac65390', // '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
-      56: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
-    },
-    token: serializedTokens.ini,
-    quoteToken: serializedTokens.wbnb,
-  },
-  {
-    pid: 7,
+    pid: 1,
     lpSymbol: 'BUSD-BNB LP',
     lpAddresses: {
       97: '0xFe8892600ece79a0B8750d2212e4Fd1E25A82d3D', // '0x4fc3E4bF61DABE19390A33D43f5a4dD97dFd58A8',
-      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+      56: '0x9F92417dD377d8E03C43437141cB30F347600aaE',
     },
     token: serializedTokens.busd,
     quoteToken: serializedTokens.wbnb,
   },
 
-  {
-    pid: 1,
-    lpSymbol: 'USDT-INI LP',
-    lpAddresses: {
-      97: '0x14aae8a1bb284917f8d9c9c0501ca79c8c132c8b',
-      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
-    },
-    token: serializedTokens.ini,
-    quoteToken: serializedTokens.usdt,
-  },
+  // {
+  //   pid: 1,
+  //   lpSymbol: 'USDT-INI LP',
+  //   lpAddresses: {
+  //     97: '0x14aae8a1bb284917f8d9c9c0501ca79c8c132c8b',
+  //     56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+  //   },
+  //   token: serializedTokens.ini,
+  //   quoteToken: serializedTokens.usdt,
+  // },
   {
     pid: 2,
-    lpSymbol: 'USDT-WBNB LP',
+    lpSymbol: 'USDT-BNB LP',
     lpAddresses: {
       97: '0x14b83cb935b5ca4e890fa9144c1debf81fa2ee46', // '0x4fc3E4bF61DABE19390A33D43f5a4dD97dFd58A8',
-      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+      56: '0x6Df0CAd58bD5269619c72Cd1F727cc96DbFE23E2',
     },
     token: serializedTokens.usdt,
     quoteToken: serializedTokens.wbnb,
   },
 
-  {
-    pid: 3,
-    lpSymbol: 'INI-DAI LP',
-    lpAddresses: {
-      97: '0x17e68b946b8af76b318076fb739beba846bb494f', // '0x4fc3E4bF61DABE19390A33D43f5a4dD97dFd58A8',
-      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
-    },
-    token: serializedTokens.ini,
-    quoteToken: serializedTokens.dai,
-  },
+  // {
+  //   pid: 3,
+  //   lpSymbol: 'INI-DAI LP',
+  //   lpAddresses: {
+  //     97: '0x17e68b946b8af76b318076fb739beba846bb494f', // '0x4fc3E4bF61DABE19390A33D43f5a4dD97dFd58A8',
+  //     56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+  //   },
+  //   token: serializedTokens.ini,
+  //   quoteToken: serializedTokens.dai,
+  // },
 
-  {
-    pid: 4,
-    lpSymbol: 'WBNB-DAI LP',
-    lpAddresses: {
-      97: '0x5f5a7f8c0f0453493b2fc3aef780689f99515849', // '0x4fc3E4bF61DABE19390A33D43f5a4dD97dFd58A8',
-      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
-    },
-    token: serializedTokens.dai,
-    quoteToken: serializedTokens.wbnb,
-  },
-  {
-    pid: 6,
-    lpSymbol: 'BUSD-INI LP',
-    lpAddresses: {
-      97: '0xee2e060dc9043dde8342f1f439dc9d20758ff1e3',
-      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
-    },
-    token: serializedTokens.ini,
-    quoteToken: serializedTokens.busd,
-  },
+  // {
+  //   pid: 4,
+  //   lpSymbol: 'BNB-DAI LP',
+  //   lpAddresses: {
+  //     97: '0x5f5a7f8c0f0453493b2fc3aef780689f99515849', // '0x4fc3E4bF61DABE19390A33D43f5a4dD97dFd58A8',
+  //     56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+  //   },
+  //   token: serializedTokens.dai,
+  //   quoteToken: serializedTokens.wbnb,
+  // },
+  // {
+  //   pid: 6,
+  //   lpSymbol: 'BUSD-INI LP',
+  //   lpAddresses: {
+  //     97: '0xee2e060dc9043dde8342f1f439dc9d20758ff1e3',
+  //     56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+  //   },
+  //   token: serializedTokens.ini,
+  //   quoteToken: serializedTokens.busd,
+  // },
   /**
    * V3 by order of release (some may be out of PID order due to multiplier boost)
    */

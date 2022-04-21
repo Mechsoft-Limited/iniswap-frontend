@@ -6,8 +6,8 @@ import chunk from 'lodash/chunk'
 import { sub, getUnixTime } from 'date-fns'
 import farmsConfig from '../src/config/constants/farms'
 
-const BLOCK_SUBGRAPH_ENDPOINT = 'http://172.105.244.91:8000/subgraphs/name/iniswap/blocks'
-const STREAMING_FAST_ENDPOINT = 'http://172.105.244.91:8000/subgraphs/name/iniswap/exchange'
+const BLOCK_SUBGRAPH_ENDPOINT = 'https://api.thegraph.com/subgraphs/name/iniswap/blocks'
+const STREAMING_FAST_ENDPOINT = 'https://api.thegraph.com/subgraphs/name/iniswap/exchange'
 
 interface BlockResponse {
   blocks: {
@@ -35,7 +35,7 @@ const getWeekAgoTimestamp = () => {
   return getUnixTime(weekAgo)
 }
 
-const LP_HOLDERS_FEE = 0.0017
+const LP_HOLDERS_FEE = 0.0016
 const WEEKS_IN_A_YEAR = 52.1429
 
 const getBlockAtTimestamp = async (timestamp: number) => {
@@ -49,6 +49,7 @@ const getBlockAtTimestamp = async (timestamp: number) => {
       }`,
       { timestampGreater: timestamp, timestampLess: timestamp + 600 },
     )
+
     return parseInt(blocks[0].number, 10)
   } catch (error) {
     throw new Error(`Failed to fetch block number for ${timestamp}\n${error}`)
